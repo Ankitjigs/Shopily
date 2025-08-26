@@ -32,8 +32,8 @@ export function useCart() {
       } catch (error) {
         console.error("Error loading cart from localStorage:", error);
       }
-      setIsLoaded(true);
     }
+    setIsLoaded(true);
   }, []);
 
   useEffect(() => {
