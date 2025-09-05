@@ -29,7 +29,7 @@ export default function ProductWrapper() {
       setError(null);
 
       try {
-        const productData = await getProductById(parseInt(id as string));
+        const productData = getProductById(parseInt(id as string));
         if (productData) {
           setProduct(productData);
         }
